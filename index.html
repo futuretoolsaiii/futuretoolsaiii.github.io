@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FutureTools AI — Apps & Projects</title>
+  <meta name="description" content="FutureTools AI — simple, delightful AI apps, bots, and automations." />
+  <style>
+    :root{
+      --bg:#0b0d12; --card:#101621; --muted:#9aa6b2; --line:#1b2738; --text:#e7eaf0; --brand:#6ea8ff;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;background:radial-gradient(1200px 700px at 80% -10%, #1a2a44 0, rgba(26,42,68,0) 45%), var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}
+    .wrap{max-width:1080px;margin:0 auto;padding:24px}
+    header{position:sticky;top:0;background:rgba(11,13,18,.6);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:20}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .nav .brand{display:flex;align-items:center;gap:10px;font-weight:700}
+    .nav .brand .logo{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#7aa2ff,#5c7cff 60%,#3a6ff8);box-shadow:0 6px 18px rgba(90,120,255,.35)}
+    .nav a{padding:10px 12px;border-radius:10px}
+    .hero{display:grid;gap:18px;grid-template-columns:1.2fr .8fr;align-items:center;padding:42px 0 18px}
+    .hero h1{font-size:40px;line-height:1.15;margin:0}
+    .kicker{letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-size:13px}
+    .lead{font-size:18px;color:#cbd3dd;margin-top:6px}
+    .cta{display:flex;gap:12px;margin-top:10px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:#131a27;color:var(--text);box-shadow:var(--shadow)}
+    .btn.primary{background:linear-gradient(135deg,#3a6ff8,#6ea8ff);border-color:transparent;color:white}
+    .btn span.icon{width:18px;height:18px;display:inline-block}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:var(--shadow)}
+    .grid{display:grid;gap:16px}
+    .apps{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+    .muted{color:var(--muted)}
+    .badge{display:inline-block;border:1px solid var(--line);padding:6px 10px;border-radius:999px;font-size:12px;background:#0e1624}
+    .section{padding:28px 0}
+    .thumb{border-radius:14px;background:linear-gradient(135deg,#1e2740,#0e1524);height:120px;border:1px solid var(--line)}
+    footer{border-top:1px solid var(--line);margin-top:28px}
+    .links a{display:inline-flex;align-items:center;gap:8px;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:#0f1625;margin:6px 8px 0 0}
+    @media (max-width:880px){.hero{grid-template-columns:1fr;padding:28px 0 8px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <span>FutureTools AI</span>
+      </div>
+      <nav>
+        <a href="#apps">Apps</a>
+        <a href="#links">Links</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <div class="kicker">Developer Home</div>
+        <h1>Simple, delightful AI apps & automations</h1>
+        <p class="lead">We build small, focused mobile apps and bots. Privacy-friendly. Fast. Useful every day.</p>
+        <div class="cta">
+          <a class="btn primary" href="#apps" title="See apps">
+            <span class="icon" aria-hidden="true">🔭</span> View apps
+          </a>
+          <a class="btn" href="/privacy-policy.html">Privacy Policy</a>
+          <a class="btn" href="/app-ads.txt" target="_blank" rel="noopener">app-ads.txt</a>
+        </div>
+        <p class="muted" style="margin-top:10px">Türkçe bilgi istersen söyle; sayfayı iki dilli yapabiliriz.</p>
+      </div>
+      <div class="card">
+        <div class="thumb" aria-hidden="true"></div>
+        <h3 style="margin:12px 0 6px">Daily Horoscope AI</h3>
+        <p class="muted" style="margin:0 0 10px">Personalized daily horoscopes, clean UI, on-device profile. Ads via AdMob.</p>
+        <div class="links">
+          <a href="#" title="App Store (soon)"> App Store (soon)</a>
+          <a href="#" title="Google Play (soon)">▶︎ Google Play (soon)</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="apps" class="section">
+      <h2 style="margin:0 0 10px">Apps & Projects</h2>
+      <div class="grid apps">
+        <article class="card">
+          <div class="thumb"></div>
+          <h3>Message-in-a-Bottle Bot</h3>
+          <p class="muted">Anonymous letter exchange on Telegram with optional replies and moderation.</p>
+          <div class="links">
+            <a href="#">Docs</a>
+            <a href="/privacy-policy.html">Privacy</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb"></div>
+          <h3>Tarot Readings AI</h3>
+          <p class="muted">Fast, on-demand readings with clear guidance. Built with Unity/React Native.</p>
+          <div class="links">
+            <a href="#">Docs</a>
+            <a href="/privacy-policy.html">Privacy</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb"></div>
+          <h3>Future Tools Daily</h3>
+          <p class="muted">Short-form content on AI tools & tips; fully automated scripts and uploads.</p>
+          <div class="links">
+            <a href="#">Docs</a>
+            <a href="/privacy-policy.html">Privacy</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="links" class="section">
+      <h2 style="margin:0 0 10px">Useful Links</h2>
+      <p class="muted">Quick access for reviewers and partners.</p>
+      <div class="links">
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/app-ads.txt" target="_blank" rel="noopener">app-ads.txt</a>
+        <a href="https://github.com/futuretoolssaiii" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2 style="margin:0 0 10px">Contact</h2>
+      <p class="muted">For support, partnerships, or press.</p>
+      <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr))">
+        <div class="card">
+          <h3 style="margin-top:0">Email</h3>
+          <p><a href="mailto:REPLACE_ME@example.com">REPLACE_ME@example.com</a></p>
+          <p class="muted" style="margin-top:6px">Replace with your contact email.</p>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0">Company / Publisher</h3>
+          <p>FutureTools AI</p>
+          <p class="muted">Add your legal entity info if required by the store.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="wrap" style="padding:18px 0">
+      <p class="muted">© 2025 FutureTools AI — All rights reserved.</p>
+    </footer>
+  </main>
+
+  <script>
+    // Smooth scroll for in-page links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{const id=a.getAttribute('href').slice(1);const el=document.getElementById(id);if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth'});}});
+    });
+  </script>
+</body>
+</html>
